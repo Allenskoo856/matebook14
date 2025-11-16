@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>FakeUVC</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.eudite.FakeUVC</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>FakeUVC-Interface</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.eudite.FakeUVC</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostInterface</string>
+			<key>USB Product Name</key>
+			<string>HD Camera</string>
+			<key>bConfigurationValue</key>
+			<integer>1</integer>
+			<key>bInterfaceClass</key>
+			<integer>14</integer>
+			<key>bInterfaceNumber</key>
+			<integer>1</integer>
+			<key>bInterfaceSubClass</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>22230</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>locationID</key>
+				<integer>338690048</integer>
+			</dict>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOUSBFamily</key>
+		<string>1.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+</dict>
+</plist>

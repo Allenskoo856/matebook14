@@ -1,0 +1,3 @@
+#!/bin/sh
+# personality-only kext stub - no-op
+exit 0
